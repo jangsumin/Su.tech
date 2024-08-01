@@ -1,0 +1,17 @@
+.navbar-wrapper {
+  padding: 3rem 2.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--main-line);
+}
+
+.logo-icon {
+  cursor: pointer;
+}
+
+.search-icon {
+  cursor: pointer;
+  width: 3.6rem;
+  height: 3.6rem;
+}
