@@ -12,7 +12,7 @@ function Navbar() {
         height={43}
         alt="logo"
       />
-      <MagnifyingGlassIcon className="search-icon" />
+      <MagnifyingGlassIcon className="search-icon" title="search" />
     </nav>
   );
 }

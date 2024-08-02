@@ -38,6 +38,7 @@ const RAW_RUNTIME_STATE =
           ["@storybook/react", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:8.2.6"],\
           ["@storybook/test", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:8.2.6"],\
           ["@testing-library/dom", "npm:10.4.0"],\
+          ["@testing-library/jest-dom", "npm:6.4.8"],\
           ["@testing-library/react", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:16.0.0"],\
           ["@types/jest", "npm:29.5.12"],\
           ["@types/node", "npm:20.14.13"],\
@@ -5233,6 +5234,21 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
+      ["npm:6.4.8", {\
+        "packageLocation": "../../../.yarn/berry/cache/@testing-library-jest-dom-npm-6.4.8-490ab7a359-10c0.zip/node_modules/@testing-library/jest-dom/",\
+        "packageDependencies": [\
+          ["@testing-library/jest-dom", "npm:6.4.8"],\
+          ["@adobe/css-tools", "npm:4.4.0"],\
+          ["@babel/runtime", "npm:7.25.0"],\
+          ["aria-query", "npm:5.3.0"],\
+          ["chalk", "npm:3.0.0"],\
+          ["css.escape", "npm:1.5.1"],\
+          ["dom-accessibility-api", "npm:0.6.3"],\
+          ["lodash", "npm:4.17.21"],\
+          ["redent", "npm:3.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["virtual:73652409c0ff489657077c28b78f7c0102a4a0609ca81939eb00a56d9500c90a76e31240da92519dc8fa9b6c765004806cff53f2629f4ffb8fa64f55cd9e8b5a#npm:6.4.5", {\
         "packageLocation": "./.yarn/__virtual__/@testing-library-jest-dom-virtual-70ad6d69b3/4/.yarn/berry/cache/@testing-library-jest-dom-npm-6.4.5-e02d3c89b2-10c0.zip/node_modules/@testing-library/jest-dom/",\
         "packageDependencies": [\
@@ -7763,6 +7779,7 @@ const RAW_RUNTIME_STATE =
           ["@storybook/react", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:8.2.6"],\
           ["@storybook/test", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:8.2.6"],\
           ["@testing-library/dom", "npm:10.4.0"],\
+          ["@testing-library/jest-dom", "npm:6.4.8"],\
           ["@testing-library/react", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:16.0.0"],\
           ["@types/jest", "npm:29.5.12"],\
           ["@types/node", "npm:20.14.13"],\
