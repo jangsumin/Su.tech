@@ -1,4 +1,4 @@
-@import url('https://fastly.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css');
+@import url("https://fastly.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css");
 
 * {
   box-sizing: border-box;
@@ -12,6 +12,7 @@
   --selected-font: #c82b92;
   --selected-background: #ffe9f9;
   --non-selected-background: #f2f4f6;
+  --default: #d9d9d9;
 }
 
 body {
@@ -103,7 +104,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'wanted-sans', sans-serif;
+  font-family: "wanted-sans", sans-serif;
   font-size: 62.5%;
   vertical-align: baseline;
 }
@@ -135,7 +136,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
