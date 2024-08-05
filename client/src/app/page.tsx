@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar/Navbar";
+import Carousel from "@/components/carousel/Carousel";
 import Tab from "@/components/tab/Tab";
 import PostPreview from "@/components/post-preview/PostPreview";
 import PopularPost from "@/components/popular-post/PopularPost";
@@ -7,6 +8,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <Carousel />
       <Tab />
       <PostPreview
         title="합성 컴포넌트 패턴, 정체를 밝혀라."
