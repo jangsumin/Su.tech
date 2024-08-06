@@ -1,8 +1,11 @@
+import Image from "next/image";
 import Navbar from "@/components/navbar/Navbar";
 import Carousel from "@/components/carousel/Carousel";
 import Tab from "@/components/tab/Tab";
 import PostPreview from "@/components/post-preview/PostPreview";
 import PopularPost from "@/components/popular-post/PopularPost";
+import Content from "@/components/carousel/Content";
+import Indicators from "@/components/carousel/Indicators";
 
 export default function Home() {
   return (
@@ -10,14 +13,19 @@ export default function Home() {
       <Navbar />
 
       <Carousel>
-        <Carousel.Content></Carousel.Content>
+        <Content index={0}>
+          <Image
+            src="/images/open.png"
+            alt="open"
+            fill
+            style={{ objectFit: "contain" }}
+          />
+        </Content>
 
-        <Carousel.PointerGroup>
-          <Carousel.PointerGroup.Pointer isSelected={false} />
-          <Carousel.PointerGroup.Pointer isSelected={true} />
-          <Carousel.PointerGroup.Pointer isSelected={false} />
-          <Carousel.PointerGroup.Pointer isSelected={false} />
-        </Carousel.PointerGroup>
+        <Content index={1}></Content>
+        <Content index={2}></Content>
+
+        <Indicators />
       </Carousel>
 
       <Tab />

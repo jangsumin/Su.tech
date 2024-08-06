@@ -1,7 +1,24 @@
+"use client";
+
+import { ReactNode } from "react";
+import { useCarousel } from "./CarouselContext";
 import "./index.css";
 
-function CarouselContent() {
-  return <article className="content"></article>;
+interface ContentProps {
+  index: number;
+  children?: ReactNode;
 }
 
-export default CarouselContent;
+const Content = ({ index, children }: ContentProps) => {
+  const { current } = useCarousel();
+
+  return (
+    <article
+      className={`content ${current === index ? "selected" : "non-selected"}`}
+    >
+      {children}
+    </article>
+  );
+};
+
+export default Content;
