@@ -1,0 +1,22 @@
+.tab-wrapper {
+  margin-left: 2rem;
+  display: flex;
+  gap: 2.8rem;
+  font-size: 3rem;
+}
+
+.menu {
+  cursor: pointer;
+  padding: 2.2rem 1.2rem 1.9rem;
+  text-align: center;
+}
+
+.selected {
+  border-bottom: 0.3rem solid var(--main-font);
+  font-weight: 500;
+}
+
+.non-selected {
+  color: var(--sub-font);
+  font-weight: 400;
+}
