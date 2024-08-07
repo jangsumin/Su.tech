@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/components/navbar/Navbar";
 import Carousel from "@/components/carousel/Carousel";
-import Content from "@/components/carousel/Content";
-import Indicators from "@/components/carousel/Indicators";
 
 export default function Home() {
   return (
@@ -10,19 +8,19 @@ export default function Home() {
       <Navbar />
 
       <Carousel>
-        <Content index={0}>
+        <Carousel.Content index={0}>
           <Image
             src="/images/open.png"
             alt="open"
             fill
             style={{ objectFit: "contain" }}
           />
-        </Content>
+        </Carousel.Content>
 
-        <Content index={1}></Content>
-        <Content index={2}></Content>
+        <Carousel.Content index={1}></Carousel.Content>
+        <Carousel.Content index={2}></Carousel.Content>
 
-        <Indicators />
+        <Carousel.Indicators />
       </Carousel>
     </>
   );
