@@ -9,7 +9,7 @@ interface CarouselProps {
 }
 
 const Carousel = ({ children }: CarouselProps) => {
-  const contentCount = React.Children.count(children);
+  const contentCount = React.Children.count(children) - 1;
   return (
     <CarouselProvider contentCount={contentCount}>
       <div className="carousel-wrapper">{children}</div>
