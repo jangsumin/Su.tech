@@ -40,6 +40,7 @@ const RAW_RUNTIME_STATE =
           ["@testing-library/dom", "npm:10.4.0"],\
           ["@testing-library/jest-dom", "npm:6.4.8"],\
           ["@testing-library/react", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:16.0.0"],\
+          ["@testing-library/user-event", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:14.5.2"],\
           ["@types/jest", "npm:29.5.12"],\
           ["@types/node", "npm:20.14.13"],\
           ["@types/react", "npm:18.3.3"],\
@@ -5320,6 +5321,19 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
+      ["virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:14.5.2", {\
+        "packageLocation": "./.yarn/__virtual__/@testing-library-user-event-virtual-e28ff8ae8f/4/.yarn/berry/cache/@testing-library-user-event-npm-14.5.2-ec9587901c-10c0.zip/node_modules/@testing-library/user-event/",\
+        "packageDependencies": [\
+          ["@testing-library/user-event", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:14.5.2"],\
+          ["@testing-library/dom", "npm:10.4.0"],\
+          ["@types/testing-library__dom", null]\
+        ],\
+        "packagePeers": [\
+          "@testing-library/dom",\
+          "@types/testing-library__dom"\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["virtual:73652409c0ff489657077c28b78f7c0102a4a0609ca81939eb00a56d9500c90a76e31240da92519dc8fa9b6c765004806cff53f2629f4ffb8fa64f55cd9e8b5a#npm:14.5.2", {\
         "packageLocation": "./.yarn/__virtual__/@testing-library-user-event-virtual-9d7337a0ec/4/.yarn/berry/cache/@testing-library-user-event-npm-14.5.2-ec9587901c-10c0.zip/node_modules/@testing-library/user-event/",\
         "packageDependencies": [\
@@ -7781,6 +7795,7 @@ const RAW_RUNTIME_STATE =
           ["@testing-library/dom", "npm:10.4.0"],\
           ["@testing-library/jest-dom", "npm:6.4.8"],\
           ["@testing-library/react", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:16.0.0"],\
+          ["@testing-library/user-event", "virtual:67bccc7d0bcfa1230f52b04f252953235f3247e8df364142a4b7724e7369b822323dc3148cf3825512a8c0b70e04e7501cbd67f5ac8193999d7bc7a9f219cccb#npm:14.5.2"],\
           ["@types/jest", "npm:29.5.12"],\
           ["@types/node", "npm:20.14.13"],\
           ["@types/react", "npm:18.3.3"],\

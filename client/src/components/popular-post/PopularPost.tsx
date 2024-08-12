@@ -3,7 +3,7 @@ import "./PopularPost.css";
 const PopularPost = () => {
   return (
     <section className="popular-post-wrapper">
-      <h3 className="heading-text">인기있는 글</h3>
+      <span className="heading-text">인기있는 글</span>
 
       <ul className="popular-post-list">
         <li className="popular-post-element">

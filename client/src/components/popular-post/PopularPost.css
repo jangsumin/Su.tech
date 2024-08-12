@@ -5,6 +5,7 @@
 }
 
 .heading-text {
+  display: block;
   margin-bottom: 3rem;
   font-size: 1.4rem;
   font-weight: 500;
