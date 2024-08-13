@@ -1,5 +1,6 @@
 import Image from "next/image";
-import "./PostPreview.css";
+import styles from "./PostPreview.module.css";
+import classnames from "classnames/bind";
 
 interface PostPreviewProps {
   title: string;
@@ -8,6 +9,8 @@ interface PostPreviewProps {
   thumbnailSrc: string;
 }
 
+const cx = classnames.bind(styles);
+
 const PostPreview = ({
   title,
   subscription,
@@ -15,10 +18,10 @@ const PostPreview = ({
   thumbnailSrc,
 }: PostPreviewProps) => {
   return (
-    <article className="post-preview-wrapper">
-      <section className="thumbnail-wrapper">
+    <article className={cx("post-preview-wrapper")}>
+      <section className={cx("thumbnail-wrapper")}>
         <Image
-          className="thumbnail"
+          className={cx("thumbnail")}
           src={thumbnailSrc}
           alt={thumbnailSrc}
           width={170}
@@ -27,9 +30,9 @@ const PostPreview = ({
       </section>
 
       <section>
-        <h1 className="title">{title}</h1>
-        <p className="subscription">{subscription}</p>
-        <time className="createdAt">{createdAt}</time>
+        <h1 className={cx("title")}>{title}</h1>
+        <p className={cx("subscription")}>{subscription}</p>
+        <time className={cx("createdAt")}>{createdAt}</time>
       </section>
     </article>
   );
