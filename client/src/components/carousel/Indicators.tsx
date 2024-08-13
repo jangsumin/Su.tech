@@ -1,18 +1,23 @@
 "use client";
 
 import { useCarousel } from "./CarouselContext";
-import "./index.css";
+import styles from "./Carousel.module.css";
+import classnames from "classnames/bind";
+
+const cx = classnames.bind(styles);
 
 const Indicators = () => {
   const { current, setCurrent, contentCount } = useCarousel();
 
   return (
-    <ul className="indicators-wrapper">
+    <ul className={cx("indicators-wrapper")}>
       {Array.from({ length: contentCount }).map((_, index) => (
         <li
-          className={`indicator ${
-            current === index ? "selected" : "non-selected"
-          }`}
+          className={cx({
+            indicator: true,
+            selected: current === index,
+            "non-selected": current !== index,
+          })}
           key={index}
           onClick={() => setCurrent(index)}
         ></li>
