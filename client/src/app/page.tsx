@@ -4,6 +4,7 @@ import { Carousel, Content, Indicators } from "@/components/carousel";
 import Tab from "@/components/tab/Tab";
 import PostPreview from "@/components/post-preview/PostPreview";
 import PopularPost from "@/components/popular-post/PopularPost";
+import Tag from "@/components/tag/Tag";
 
 export default function Home() {
   return (
@@ -36,6 +37,16 @@ export default function Home() {
       />
 
       <PopularPost />
+
+      <Tag
+        tagList={[
+          { tagId: 1, tagName: "Frontend" },
+          { tagId: 2, tagName: "Backend" },
+          { tagId: 3, tagName: "생산성" },
+          { tagId: 4, tagName: "React" },
+          { tagId: 5, tagName: "storybook" },
+        ]}
+      />
     </>
   );
 }
