@@ -11,11 +11,11 @@ function Navbar() {
       <Image
         className={cx("logo-icon")}
         src="/su-tech.svg"
-        width={130}
-        height={43}
+        width={100}
+        height={28}
         alt="logo"
       />
-      <MagnifyingGlassIcon className={cx("search-icon")} title="search" />
+      {/* <MagnifyingGlassIcon className={cx("search-icon")} title="search" /> */}
     </nav>
   );
 }

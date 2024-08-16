@@ -9,6 +9,7 @@
   margin-bottom: 3rem;
   font-size: 1.4rem;
   font-weight: 500;
+  color: var(--sub-font);
 }
 
 .popular-post-list {
@@ -27,7 +28,7 @@
 
 .title {
   margin-bottom: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 500;
 }
 

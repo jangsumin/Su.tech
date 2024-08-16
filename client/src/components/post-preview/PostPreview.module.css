@@ -10,7 +10,7 @@
 
 .title {
   margin-bottom: 0.6rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -20,14 +20,14 @@
 
 .subscription {
   margin-bottom: 1.7rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: var(--sub-font);
 }
 
 .createdAt {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 1.3rem;
+  font-weight: 400;
   color: var(--sub-font);
 }
 
