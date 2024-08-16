@@ -1,0 +1,14 @@
+.content-wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main-content-wrapper {
+  flex-basis: 65%;
+  border-right: 1px solid var(--main-line);
+}
+
+.sub-content-wrapper {
+  flex-basis: 35%;
+}
