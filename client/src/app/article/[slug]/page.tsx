@@ -3,6 +3,7 @@ import PostHeader from "@/components/post-header/PostHeader";
 import { getPostPaths, getPostDetail, extractSlug } from "@/lib/post";
 import styles from "./page.module.css";
 import classnames from "classnames/bind";
+import PostBody from "@/components/post-body/PostBody";
 
 type Props = {
   params: { slug: string };
@@ -27,6 +28,7 @@ export default async function PostDetail({ params: { slug } }: Props) {
 
       <article className={cx("article-wrapper")}>
         <PostHeader post={post} />
+        <PostBody post={post} />
       </article>
     </>
   );

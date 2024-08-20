@@ -8,7 +8,5 @@ export interface PostMatter {
 }
 
 export interface Post extends PostMatter {
-  url: string;
-  slug: string;
   content: string;
 }

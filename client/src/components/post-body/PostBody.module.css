@@ -1,0 +1,122 @@
+.post-body-wrapper {
+  margin-top: 5rem;
+  color: var(--post-body-font);
+  word-break: keep-all;
+}
+
+.post-body-wrapper h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--main-font);
+  line-height: 2.5;
+}
+
+.post-body-wrapper h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: var(--main-font);
+  line-height: 2.5;
+}
+
+.post-body-wrapper h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--main-font);
+  line-height: 2.5;
+}
+
+.post-body-wrapper h4 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--main-font);
+  line-height: 2.5;
+}
+
+.post-body-wrapper h5 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--main-font);
+  line-height: 2.5;
+}
+
+.post-body-wrapper h6 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--main-font);
+  line-height: 2.5;
+}
+
+.post-body-wrapper p {
+  margin: 2.4rem 0 0.8rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* 코드 블럭 */
+.post-body-wrapper figure pre code {
+  margin: 2.4rem 0 0.8rem;
+  padding: 2rem;
+  border: 0.1rem solid var(--main-line);
+  border-radius: 1rem;
+}
+
+.post-body-wrapper code span {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* 이탤릭체 */
+.post-body-wrapper em {
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* 강조체 */
+.post-body-wrapper strong {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* 수평선 */
+.post-body-wrapper hr {
+  margin: 4rem 0;
+  border: 0.1rem solid var(--main-line);
+}
+
+/* 인라인 코드 블럭 */
+.post-body-wrapper p code {
+  margin-right: 0.5rem;
+  padding: 0.3rem 1rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  background-color: var(--selected-background);
+  border-radius: 0.3rem;
+}
+
+/* 취소선 */
+.post-body-wrapper del {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* 하이퍼링크 */
+.post-body-wrapper a {
+  padding-bottom: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.6;
+  text-decoration-line: none;
+  color: var(--selected-font);
+}
+
+.post-body-wrapper a:hover {
+  text-decoration-line: underline;
+  text-underline-position: under;
+  text-underline-offset: 0.3rem;
+}
