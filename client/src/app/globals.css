@@ -11,11 +11,13 @@
   --main-font: #000000;
   --sub-font: #6b7988;
   --third-font: #a7afb8;
+  --fourth-font: #ffffff;
   --post-body-font: #4b535b;
   --main-line: #eff0f2;
   --selected-font: #c82b92;
   --selected-background: #ffe9f9;
   --non-selected-background: #f2f4f6;
+  --blockquote-background: #1e293b;
   --default: #d9d9d9;
 }
 

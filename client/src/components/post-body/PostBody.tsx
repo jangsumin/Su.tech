@@ -8,6 +8,7 @@ import rehypeSlug from "rehype-slug";
 import rehypePrettyCode from "rehype-pretty-code";
 import styles from "./PostBody.module.css";
 import classnames from "classnames/bind";
+import MdxComponents from "../mdx-components";
 
 interface Props {
   post: Post;
@@ -20,6 +21,7 @@ const PostBody = ({ post }: Props) => {
     <div className={cx("post-body-wrapper")}>
       <MDXRemote
         source={post.content}
+        components={MdxComponents}
         options={{
           mdxOptions: {
             remarkPlugins: [remarkGfm, remarkBreaks, remarkA11yEmoji],

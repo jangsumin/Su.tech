@@ -120,3 +120,46 @@
   text-underline-position: under;
   text-underline-offset: 0.3rem;
 }
+
+/* 인용문 */
+.post-body-wrapper blockquote p {
+  padding: 1rem;
+  color: var(--fourth-font);
+  font-size: 1.7rem;
+  line-height: 1.6;
+  background-color: var(--blockquote-background);
+  border-radius: 0.5rem;
+}
+
+/* 리스트 */
+.post-body-wrapper ul,
+.post-body-wrapper ol {
+  margin: 2.4rem 0 0.8rem;
+}
+
+.post-body-wrapper ul {
+  list-style-type: disc;
+}
+
+.post-body-wrapper ol {
+  list-style-type: decimal;
+}
+
+.post-body-wrapper ul li,
+.post-body-wrapper ol li {
+  margin: 0 0 1.2rem 2rem;
+  font-size: 1.7rem;
+}
+
+/* 이미지 */
+.post-body-wrapper p img {
+  width: 100%;
+}
+
+.post-body-wrapper p img + span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: var(--sub-font);
+  text-align: center;
+}
