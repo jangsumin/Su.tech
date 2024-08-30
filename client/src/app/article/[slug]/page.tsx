@@ -27,7 +27,7 @@ export default async function PostDetail({ params: { slug } }: Props) {
       <Navbar />
 
       <article className={cx("article-wrapper")}>
-        <PostHeader post={post} />
+        <PostHeader postMatter={post} />
         <PostBody post={post} />
       </article>
     </>

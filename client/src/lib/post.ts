@@ -1,4 +1,4 @@
-import { PostMatter } from "@/config/types";
+import { IPostMatter } from "@/config/types";
 import fs from "fs";
 import { sync } from "glob";
 import matter from "gray-matter";
@@ -17,7 +17,7 @@ export const getPostPaths = () => {
 const parsePost = async (postPath: string) => {
   const file = fs.readFileSync(postPath, "utf8");
   const { data, content } = matter(file);
-  const frontMatter = data as PostMatter;
+  const frontMatter = data as IPostMatter;
   return { ...frontMatter, content };
 };
 
@@ -26,7 +26,7 @@ export const extractSlug = (path: string) => {
   const filePath = path
     .slice(path.indexOf(BASE_PATH))
     .replace(`${BASE_PATH}/`, "")
-    .replace(".mdx", "");
+    .replace("/content.mdx", "");
 
   const slug = filePath;
   const url = `/article/${slug}`;
@@ -38,4 +38,22 @@ export const getPostDetail = async (slug: string) => {
   const filePath = `${POSTS_PATH}/${slug}/content.mdx`;
   const detail = await parsePost(filePath);
   return detail;
+};
+
+// MDX 파일의 frontMatter, slug, url 파싱
+const parsePostPreview = async (postPath: string) => {
+  const file = fs.readFileSync(postPath, "utf8");
+  const { data } = matter(file);
+  const frontMatter = data as IPostMatter;
+  const slug = extractSlug(postPath);
+  return { ...frontMatter, ...slug };
+};
+
+// 모든 포스트의 frontMatter와 slug, url 목록 조회
+export const getPostList = async () => {
+  const postPaths = getPostPaths();
+  const postList = await Promise.all(
+    postPaths.map((postPath) => parsePostPreview(postPath))
+  );
+  return postList;
 };

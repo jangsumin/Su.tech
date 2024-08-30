@@ -2,15 +2,18 @@ import Image from "next/image";
 import Navbar from "@/components/navbar/Navbar";
 import { Carousel, Content, Indicators } from "@/components/carousel";
 import Tab from "@/components/tab/Tab";
-import PostPreview from "@/components/post-preview/PostPreview";
+import PostPreviewList from "@/components/post-preview-list/PostPreviewList";
 import PopularPost from "@/components/popular-post/PopularPost";
 import Tag from "@/components/tag/Tag";
+import { getPostList } from "@/lib/post";
 import classnames from "classnames/bind";
 import styles from "./page.module.css";
 
 const cx = classnames.bind(styles);
 
-export default function Home() {
+export default async function Home() {
+  const postList = await getPostList();
+
   return (
     <>
       <Navbar />
@@ -35,19 +38,7 @@ export default function Home() {
         <div className={cx("main-content-wrapper")}>
           <Tab />
 
-          <PostPreview
-            title="합성 컴포넌트 패턴, 정체를 밝혀라."
-            subscription="복잡한 컴포넌트의 구성 요소를 조합해서 만드는 방법을 소개합니다."
-            createdAt="2024월 8월 16일"
-            thumbnailSrc="/images/pipe.png"
-          />
-
-          <PostPreview
-            title="합성 컴포넌트 패턴, 정체를 밝혀라."
-            subscription="복잡한 컴포넌트의 구성 요소를 조합해서 만드는 방법을 소개합니다."
-            createdAt="2024월 8월 9일"
-            thumbnailSrc="/images/pipe.png"
-          />
+          <PostPreviewList postList={postList} />
         </div>
 
         <div className={cx("sub-content-wrapper")}>
