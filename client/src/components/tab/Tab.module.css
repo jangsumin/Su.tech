@@ -1,5 +1,4 @@
 .tab-wrapper {
-  margin-left: 2rem;
   display: flex;
   gap: 2.8rem;
   border-bottom: 1px solid var(--main-line);

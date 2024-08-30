@@ -11,8 +11,8 @@ function Navbar() {
       <Image
         className={cx("logo-icon")}
         src="/su-tech.svg"
-        width={100}
-        height={28}
+        width={80}
+        height={20}
         alt="logo"
       />
       {/* <MagnifyingGlassIcon className={cx("search-icon")} title="search" /> */}
